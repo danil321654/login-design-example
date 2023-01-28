@@ -13,6 +13,7 @@
     width: 22rem;
     height: 22rem;
     opacity: 0.45;
+    z-index: -2;
     filter: blur(158.5px);
     &--yellow {
       left: 14rem;
