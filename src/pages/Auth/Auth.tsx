@@ -20,8 +20,6 @@ export const Auth: FC<AuthProps> = ({ variant }) => {
     register: `${rightPath}/register`,
   } as const;
 
-  console.log(path);
-
   return (
     <div className="auth">
       <header className="auth__header">
@@ -55,12 +53,14 @@ export const Auth: FC<AuthProps> = ({ variant }) => {
             <span className="auth__page-title">{authText.title[variant]}</span>
             <span className="auth__page-subtitle">
               {authText.subTitle[variant]}{" "}
-              <Link
-                to={path[variant === "login" ? "register" : "login"]}
+              <span
+                onClick={() =>
+                  navigate(path[variant === "login" ? "register" : "login"])
+                }
                 className="auth__page-subtitle-link"
               >
                 {authText.subTitleLink[variant]}
-              </Link>
+              </span>
             </span>
           </div>
           <picture className="auth__logo">
