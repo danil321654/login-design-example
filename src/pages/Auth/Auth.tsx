@@ -14,10 +14,10 @@ export const Auth: FC<AuthProps> = ({ variant }) => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const [, ...startPathName] = pathname.split("/").reverse();
-  const rightPath = startPathName.reverse();
+  const rightPath = startPathName.reverse().join("/");
   const path = {
-    login: `${rightPath.join("/")}/login`,
-    register: `${rightPath.join("/")}/register`,
+    login: `${rightPath}/login`,
+    register: `${rightPath}/register`,
   } as const;
 
   console.log(path);
@@ -55,7 +55,10 @@ export const Auth: FC<AuthProps> = ({ variant }) => {
             <span className="auth__page-title">{authText.title[variant]}</span>
             <span className="auth__page-subtitle">
               {authText.subTitle[variant]}{" "}
-              <Link to={path[variant]} className="auth__page-subtitle-link">
+              <Link
+                to={path[variant === "login" ? "register" : "login"]}
+                className="auth__page-subtitle-link"
+              >
                 {authText.subTitleLink[variant]}
               </Link>
             </span>
