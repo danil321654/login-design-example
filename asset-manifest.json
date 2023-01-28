@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/login-design-example/static/css/main.0c4331e1.css",
-    "main.js": "/login-design-example/static/js/main.971aa4ff.js",
+    "main.css": "/login-design-example/static/css/main.51eb01ea.css",
+    "main.js": "/login-design-example/static/js/main.a9f1f708.js",
+    "static/media/character.png": "/login-design-example/static/media/character.0c62b19b135fd1eed212.png",
     "static/media/unhide.svg": "/login-design-example/static/media/unhide.37a9319f01b3b572d02f4b19ce202c8e.svg",
     "static/media/google.svg": "/login-design-example/static/media/google.b5f22017cb92671b1c1015deaaf98f1b.svg",
     "static/media/apple.svg": "/login-design-example/static/media/apple.a539e9195b795138e90046862cf3ee1c.svg",
     "index.html": "/login-design-example/index.html",
     "static/media/facebook.svg": "/login-design-example/static/media/facebook.b821fbdd4b2deade74de5c65098a6679.svg",
     "static/media/clear.svg": "/login-design-example/static/media/clear.e579caeb5948791a44dc822d782e35d2.svg",
-    "main.0c4331e1.css.map": "/login-design-example/static/css/main.0c4331e1.css.map",
-    "main.971aa4ff.js.map": "/login-design-example/static/js/main.971aa4ff.js.map"
+    "main.51eb01ea.css.map": "/login-design-example/static/css/main.51eb01ea.css.map",
+    "main.a9f1f708.js.map": "/login-design-example/static/js/main.a9f1f708.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c4331e1.css",
-    "static/js/main.971aa4ff.js"
+    "static/css/main.51eb01ea.css",
+    "static/js/main.a9f1f708.js"
   ]
 }
