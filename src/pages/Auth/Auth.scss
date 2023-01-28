@@ -33,11 +33,16 @@
   &__main {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
   }
   &__presentational {
     display: grid;
     grid-template-columns: 1fr 1.8fr;
     column-gap: 2rem;
+    @media only screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      column-gap: unset;
+    }
   }
   &__page-titles {
     display: flex;
@@ -55,7 +60,7 @@
   }
   &__page-subtitle-link {
     font-weight: 600;
-    font-size: 23px;
+    font-size: 2.3rem;
     color: #4461f2;
     text-decoration: none;
   }
@@ -64,6 +69,9 @@
     img {
       width: 55rem;
       height: 45rem;
+    }
+    @media only screen and (max-width: 1200px) {
+      display: none;
     }
   }
 }

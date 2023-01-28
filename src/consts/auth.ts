@@ -7,7 +7,7 @@ export const authText =
     },
     title: {
       login: "Sign in to Recharge Direct",
-      register: "Sign up to Recharge Driect",
+      register: "Sign up to Recharge Direct",
     },
     subTitle: {
       login: "Don't have an account? You can",
