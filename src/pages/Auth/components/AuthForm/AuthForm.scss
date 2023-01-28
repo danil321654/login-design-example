@@ -1,0 +1,40 @@
+.auth-form {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__recover-password {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    color: #c7c7c7;
+    text-decoration: none;
+  }
+  &__divider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.09em;
+    color: #acadac;
+    gap: 1.5rem;
+  }
+  &__divider-line {
+    background: #dfdfdf;
+    height: 1px;
+    flex-grow: 1;
+  }
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5rem;
+  }
+}
